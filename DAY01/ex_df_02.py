@@ -4,7 +4,7 @@
 # [1] 모듈/패키지 로딩
 import pandas as pd
 
-# [2] csv 데이터 읽어오기
+# [2] EXCEL 데이터 읽어오기
 DATA_FILE = '../DATA/학생관리부.xlsx'
 
 # >>> DataFrame 형태로 저장
