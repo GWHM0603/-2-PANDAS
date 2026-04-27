@@ -10,7 +10,7 @@
 def print_info(obj, obj_name):
     # Series 인스턴스 정보 확인 -> data, index, dtype 지정한 것
     # Series 인스턴스/객체 변수명.속셩명
-    print(f"\nSeries 속성들")
+    print(f"\n{obj_name} Series 속성들")
     print(f"index -> {obj.index}") # 원소 식별 번호
     print(f"values ->{obj.values}") # 원소에 저장된 데이터들
     print(f"shape -> {obj.shape}") # 1줄 시리즈의 형태. 튜프로 보기
@@ -20,5 +20,6 @@ def print_info(obj, obj_name):
 
 
     # Series 형태 출력
-    print(f"\nSeries 형태 출력")
+    print(f"\n{obj_name} Series 형태 출력")
+    print(obj_name,'\n')
     print(obj,'\n')
