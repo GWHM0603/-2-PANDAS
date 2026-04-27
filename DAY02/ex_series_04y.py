@@ -17,7 +17,7 @@ data5 ="Good"
 sr1 = pd.Series(data1)
 sr2 = pd.Series(data2)
 # sr3 = pd.Series(data3)  # set은 항상 순서가 바뀌므로 인덱스를 할당할 수 없음 
-sr4 = pd.Series(data4)
+sr4 = pd.Series(data4) # dict는 키값이 항상 인덱스로 할당됨.
 sr5 = pd.Series(data5)
 
 
