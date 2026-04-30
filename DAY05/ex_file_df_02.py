@@ -42,7 +42,7 @@ print()
 
 # 속성이 궁금하다!
 print("[5] 컬럼 인덱스는?\n", excel_df.columns, '\n')
-print("[6ㄴ] 행 인덱스는?\n", excel_df.index)
+print("[6] 행 인덱스는?\n", excel_df.index)
 print("--------------------------------------------------------------")
 print()
 print()
