@@ -93,8 +93,44 @@ u.print_df('[7]] 첫 번째줄 초기 컬럼 인덱스가 없고, 공백 1개로
 print()
 
 # 속성이 궁금하다!
-print("[8] 컬럼 인덱스는?\n", iris_df.columns)
+print("[8] 컬럼 인덱스는?\n", iris_df.columns, '\n')
 print("[9] 행 인덱스를 컬럼 인덱스로 바꾼 결과는?\n", iris_df.index)
+print("--------------------------------------------------------------")
+print()
+print()
+
+
+# csv -> DF 로딩 및 기본 형태 확인 :: DATA_FIlE1
+# 일부 컬럼만 가져오자
+iris_df = pd.read_csv(DATA_FIlE1, usecols=[0, 1, 4])
+
+# 기본 정보 확인
+u.print_df('[10] 0, 1, 4번 컬럼만 추출한 CSV', iris_df)
+print()
+
+# 속성이 궁금하다!
+print("[11] 컬럼 인덱스는?\n", iris_df.columns,'\n')
+print("[12] DF의 형태 정보는?\n", iris_df.shape)
+print("--------------------------------------------------------------")
+print()
+print()
+
+
+
+# csv -> DF 로딩 및 기본 형태 확인 :: DATA_FIlE1
+# 일부 행만 가져오자
+# >>> skipfooter = 130 아래쪽 130개는 데이터 로딩안함
+# >>> skiprows = 130 위쪽 130개는 데이터 로딩안함. 컬럼명도 버려서 주의
+
+iris_df = pd.read_csv(DATA_FIlE1, skipfooter = 30, skiprows = 10, header = None)
+
+# 기본 정보 확인
+u.print_df('[13] 일부 행 제외한 CSV', iris_df)
+print()
+
+# 속성이 궁금하다!
+print("[14] 컬럼 인덱스는?\n", iris_df.columns,'\n')
+print("[15] DF의 형태 정보는?\n", iris_df.shape)
 print("--------------------------------------------------------------")
 print()
 print()
