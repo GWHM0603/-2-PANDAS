@@ -134,3 +134,23 @@ print("[15] DF의 형태 정보는?\n", iris_df.shape)
 print("--------------------------------------------------------------")
 print()
 print()
+
+
+
+# csv -> DF 로딩 및 기본 형태 확인 :: DATA_FIlE1
+# 날짜/시간 컬럼 존재하는 데이터 파일
+# >>> datetime64[ns] 형 변환 후 로딩:  parse_dates = [컬럼명] 매개변수
+DATA_FILE4 ="../DATA/sample_data.csv"
+csv_df = pd.read_csv(DATA_FILE4, parse_dates=['date'])
+
+# 기본 정보 확인
+u.print_df('[16] sample_data.csv', csv_df)
+print()
+
+# 속성이 궁금하다!
+print("[17] 컬럼 인덱스는?\n", csv_df.columns,'\n')
+print("[18] DF의 형태 정보는?\n", csv_df.shape, '\n')
+print("[19] DF의 컬럼 타입은?\n", csv_df.dtypes.to_dict())
+print("--------------------------------------------------------------")
+print()
+print()
